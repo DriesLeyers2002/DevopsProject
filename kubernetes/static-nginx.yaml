@@ -23,12 +23,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: static
+  name: nginx
 spec:
   selector:
     app: nginx
   ports:
-  - name: static
+  - name: nginx
     protocol: TCP
     port: 80
     targetPort: http-web-svc
